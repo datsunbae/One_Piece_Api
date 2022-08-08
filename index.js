@@ -80,6 +80,7 @@ app.use('/all_characters/:character', (req, res) => {
                     characterObjects[titles[i]] = details[i];
                 }
                 const newCharacterObjects = {
+                    name: req.params.character.replace('_', ' '),
                     image,
                     ...characterObjects
                 }
