@@ -26,7 +26,7 @@ app.get('/all_characters', (req, res) => {
                     let url = $(this).find("a").attr("href");
                     obj.push({
                         name: name,
-                        url: "http://localhost:3000/all_characters" + url.split('/wiki')[1]
+                        url: "https://naruto-movie-api.herokuapp.com/all_characters" + url.split('/wiki')[1]
                     })
                 })
 
